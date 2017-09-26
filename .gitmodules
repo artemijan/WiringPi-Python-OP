@@ -1,4 +1,4 @@
-[submodule "WiringPi"]
+[submodule "wiringPi"]
 	path = wiringPi
 	url = https://github.com/WereCatf/WiringOP.git
 	branch = h3
