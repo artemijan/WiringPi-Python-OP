@@ -3,15 +3,15 @@
 from setuptools import setup, find_packages, Extension
 from glob import glob
 
-sources = glob('WiringPi/devLib/*.c')
-sources += glob('WiringPi/wiringPi/*.c')
+sources = glob('WiringOP/devLib/*.c')
+sources += glob('WiringOP/wiringPi/*.c')
 sources += ['wiringpi_wrap.c']
 
-sources.remove('WiringPi/devLib/piFaceOld.c')
+sources.remove('WiringOP/devLib/piFaceOld.c')
 
 _wiringpi = Extension(
     '_wiringpi',
-    include_dirs=['WiringPi/wiringPi','WiringPi/devLib'],
+    include_dirs=['WiringOP/wiringPi','WiringOP/devLib'],
     sources=sources
 )
 
@@ -28,5 +28,5 @@ setup(
     ext_modules = [ _wiringpi ],
     py_modules = ["wiringpi"],
     install_requires=[],
-    headers=glob('WiringPi/wiringPi/*.h')+glob('WiringPi/devLib/*.h')
+    headers=glob('WiringOP/wiringPi/*.h')+glob('WiringOP/devLib/*.h')
 )
