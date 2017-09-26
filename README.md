@@ -1,9 +1,9 @@
-#WiringPi for Python
+#WiringOP for Python
 
-WiringPi: An implementation of most of the Arduino Wiring
+WiringOP: An implementation of most of the Arduino Wiring
 	functions for the Raspberry Pi
 
-WiringPi implements new functions for managing IO expanders.
+WiringOP implements new functions for managing IO expanders.
 
 ##Testing
 Build with gcc version 4.6.3 (Debian 4.6.3-14+rpi1)
@@ -22,9 +22,9 @@ you **must** first have python-dev, python-setuptools and swig installed.
 sudo apt-get install python-dev python-setuptools swig
 ```
 
-##Build WiringPi
+##Build WiringOP
 ```bash
-cd WiringPi
+cd WiringOP
 sudo ./build
 ```
 
