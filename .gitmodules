@@ -1,4 +1,4 @@
 [submodule "WiringOP"]
 	path = WiringOP
-	url = https://github.com/WereCatf/WiringOP.git
-	branch = h3
+	url = https://github.com/tumugin/WiringOP.git
+	branch = h5
